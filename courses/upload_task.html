@@ -1196,22 +1196,40 @@
         <div id="content" class="site-content">
             <div class="site-content-inner edublink-container">
                 <div class="edublink-main-content-inner">
-                    <h2>Upload Task</h2>
-                    <form action="#" method="post" enctype="multipart/form-data">
-                        <label for="task-description">Task Description:</label><br>
-                        <textarea id="task-description" name="task-description" rows="4" cols="50"></textarea><br><br>
-
-                        <label for="task-deadline">Task Deadline:</label><br>
-                        <input type="date" id="task-deadline" name="task-deadline"><br><br>
-
-                        <label for="task-file">Task File:</label><br>
-                        <input type="file" id="task-file" name="task-file"><br><br>
-
-                        <input type="submit" value="Submit">
-                    </form>
-                    <div style="text-align: center; margin-top: 20px;">
-                        <button id="return">Reset</button>
-                        <button id="add-students">Return</button>
+                    <div style="margin-top: 5rem;">
+                        <div style="display: flex; justify-content: center;">
+                            <div style="width: 70%; box-shadow: 0 0.8rem 3rem rgba(0, 0, 0, 0.4); border-radius: 1.5rem;">
+                                <div style="background-color: #84f88e; color: #343a40; border-radius: 1.5rem 1.5rem 0 0; padding: 0.75rem;">
+                                    Upload Task
+                                </div>
+                                <div style="padding: 1.5rem;">
+                                    <form id="uploadForm" name="uploadForm" method="post" enctype="multipart/form-data">
+                                        <div style="margin-bottom: 1.5rem;">
+                                            <label for="task_desc" style="margin-bottom: 0.5rem; display: block;">Task Description</label>
+                                            <textarea style="width: 100%; padding: 0.5rem; border-radius: 0.5rem; border: 1px solid #ced4da;" id="task_desc" rows="3"></textarea>
+                                        </div>
+                                        <div style="margin-bottom: 1.5rem;">
+                                            <label for="task_deadline" style="margin-bottom: 0.5rem; display: block;">Task Deadline</label>
+                                            <input style="width: 100%; padding: 0.5rem; border-radius: 0.5rem; border: 1px solid #ced4da;" type="date" id="task_deadline" name="task_deadline">
+                                        </div>
+                                        <div style="margin-bottom: 1.5rem;">
+                                            <label for="task_file" style="margin-bottom: 0.5rem; display: block;">Task File</label>
+                                            <input style="width: 100%; padding: 0.5rem; border-radius: 0.5rem; border: 1px solid #ced4da;" type="file" id="task_file">
+                                        </div>
+                                        <div style="display: flex; justify-content: center; margin-bottom: 1.5rem;">
+                                            <button type="button" style="margin-right: 0.5rem; padding: 0.5rem 1rem; border-radius: 0.5rem; background-color: #007bff; color: #fff; border: none; cursor: pointer;">Upload</button>
+                                            <button type="reset" style="margin-right: 0.5rem; padding: 0.5rem 1rem; border-radius: 0.5rem; background-color: #6c757d; color: #fff; border: none; cursor: pointer;">Reset</button>
+                                            <button type="button" style="padding: 0.5rem 1rem; border-radius: 0.5rem; background-color: #dc3545; color: #fff; border: none; cursor: pointer;" onclick="window.location.href = 'class_details.php?class_id=<?php echo $class_id; ?>'">Return</button>
+                                        </div>
+                                        <div id="progressContainer" style="display: none; margin-top: 1.5rem;">
+                                            <div style="height: 12px; background-color: #ddd; border-radius: 0.5rem;">
+                                                <div id="progressBar" style="width: 0%; height: 100%; background-color: #007bff; border-radius: 0.5rem;"></div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

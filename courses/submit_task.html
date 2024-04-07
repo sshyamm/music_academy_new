@@ -1196,68 +1196,68 @@
         <div id="content" class="site-content">
             <div class="site-content-inner edublink-container">
                 <div class="edublink-main-content-inner">
-                    <section id="task-manager">
-                        <h2>Task Manager</h2>
-                        <table>
-                            <tr>
-                                <td>Date Of Class:</td>
-                                <td><span id="class-date">April 6, 2024</span></td>
-                            </tr>
-                            <tr>
-                                <td>Course Name:</td>
-                                <td><span id="course-name">Web Development</span></td>
-                            </tr>
-                            <tr>
-                                <td>Teacher Name:</td>
-                                <td><span id="teacher-name">John Doe</span></td>
-                            </tr>
-                            <tr>
-                                <td>Task Description:</td>
-                                <td><span id="task-description">Create Homepage</span></td>
-                            </tr>
-                            <tr>
-                                <td>Task Deadline:</td>
-                                <td><span id="task-deadline">April 10, 2024</span></td>
-                            </tr>
-                            <tr>
-                                <td>Comments By Teacher:</td>
-                                <td><span id="teacher-comments">Great job!</span></td>
-                            </tr>
-                            <tr>
-                                <td>Gradings by Teacher:</td>
-                                <td><span id="teacher-gradings">A+</span></td>
-                            </tr>
-                            <tr>
-                                <td>Last Updated:</td>
-                                <td><span id="last-updated">April 8, 2024</span></td>
-                            </tr>
-                            <tr>
-                                <td>Submission Status:</td>
-                                <td><span id="submission-status">Submitted</span></td>
-                            </tr>
-                        </table>
-                    </section>
+                    <style>
+                        @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+                    </style>
+                    <section id="task-details" style="background: linear-gradient(135deg, #d8f7d4, #26cf05); padding: 30px; border-radius: 25px; box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4); color: #fff; text-align: center; font-family: Didact Gothic;">
+						<h2 style="font-family: 'Roboto', Arial, sans-serif; font-size: 32px; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 20px;">Task Details</h2>
+						<div class="card-body" style="display: flex;">
+							<div class="column" style="flex: 1; text-align: left;">
+								<p style="color: #000;"><strong style="font-weight: bold;">Date Of Class:</strong> Web Development</p>
+								<p style="color: #000;"><strong style="font-weight: bold;">Course Name:</strong> John Doe</p>
+								<p style="color: #000;"><strong style="font-weight: bold;">Teacher Name:</strong> 9:00 AM</p>
+								<p style="color: #000;"><strong style="font-weight: bold;">Task Description:</strong> 11:00 AM</p>
+								<p style="color: #000;"><strong style="font-weight: bold;">Task Deadline:</strong> April 6, 2024</p>
+							</div>
+							<div class="column" style="flex: 1; text-align: left;">
+								<p style="color: #000;"><strong style="font-weight: bold;">Comments By Teacher:</strong> Learn frontend and backend development</p>
+                                <p style="color: #000;"><strong style="font-weight: bold;">Gradings By Teacher:</strong> Learn frontend and backend development</p>
+                                <p style="color: #000;"><strong style="font-weight: bold;">Last Updated:</strong> Learn frontend and backend development</p>
+                                <p style="color: #000;"><strong style="font-weight: bold;">Submission Status:</strong> Learn frontend and backend development</p>
+							</div>
+						</div>
+					</section>
+                    
                     <div style="height: 50px;"></div>
-                    <section id="submit-task">
-                        <h2>Submit Task</h2>
-                        <form action="#" method="post" enctype="multipart/form-data">
-                            <label for="remark">Remark:</label><br>
-                            <textarea id="remark" name="remark" rows="4" cols="50"></textarea><br><br>
-
-                            <label for="task-file">Task File:</label><br>
-                            <input type="file" id="task-file" name="task-file"><br><br>
-
-                            <div style="text-align: center;">
-                                <button type="submit">Upload</button>
-                                <button type="reset">Reset</button>
-                                <a href="class_details.html"><button type="button">Return</button></a>
+                    <div style="margin-top: 5rem;">
+                        <div style="display: flex; justify-content: center;">
+                            <div style="width: 70%; box-shadow: 0 0.8rem 3rem rgba(0, 0, 0, 0.4); border-radius: 1.5rem;">
+                                <div style="background-color: #d8f7d4; color: #000407; border-radius: 1.5rem 1.5rem 0 0; padding: 0.75rem;">
+                                    Upload Task
+                                </div>
+                                <div style="padding: 1.5rem;">
+                                    <form id="uploadForm" name="uploadForm" method="post" enctype="multipart/form-data">
+                                        <div style="margin-bottom: 1.5rem;">
+                                            <label for="task_desc" style="margin-bottom: 0.5rem; display: block;">Task Description</label>
+                                            <textarea style="width: 100%; padding: 0.5rem; border-radius: 0.5rem; border: 1px solid #ced4da;" id="task_desc" rows="3"></textarea>
+                                        </div>
+                                        <div style="margin-bottom: 1.5rem;">
+                                            <label for="task_deadline" style="margin-bottom: 0.5rem; display: block;">Task Deadline</label>
+                                            <input style="width: 100%; padding: 0.5rem; border-radius: 0.5rem; border: 1px solid #ced4da;" type="date" id="task_deadline" name="task_deadline">
+                                        </div>
+                                        <div style="margin-bottom: 1.5rem;">
+                                            <label for="task_file" style="margin-bottom: 0.5rem; display: block;">Task File</label>
+                                            <input style="width: 100%; padding: 0.5rem; border-radius: 0.5rem; border: 1px solid #ced4da;" type="file" id="task_file">
+                                        </div>
+                                        <div style="display: flex; justify-content: center; margin-bottom: 1.5rem;">
+                                            <button type="button" style="margin-right: 0.5rem; padding: 0.5rem 1rem; border-radius: 0.5rem; background-color: #007bff; color: #fff; border: none; cursor: pointer;">Upload</button>
+                                            <button type="reset" style="margin-right: 0.5rem; padding: 0.5rem 1rem; border-radius: 0.5rem; background-color: #6c757d; color: #fff; border: none; cursor: pointer;">Reset</button>
+                                            <button type="button" style="padding: 0.5rem 1rem; border-radius: 0.5rem; background-color: #dc3545; color: #fff; border: none; cursor: pointer;" onclick="window.location.href = 'class_details.php?class_id=<?php echo $class_id; ?>'">Return</button>
+                                        </div>
+                                        <div id="progressContainer" style="display: none; margin-top: 1.5rem;">
+                                            <div style="height: 12px; background-color: #ddd; border-radius: 0.5rem;">
+                                                <div id="progressBar" style="width: 0%; height: 100%; background-color: #007bff; border-radius: 0.5rem;"></div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
-                        </form>
-                    </section>
+                        </div>
+                    </div>
                     <div style="height: 50px;"></div>
-                    <section id="uploaded-submissions">
-                        <h2>Uploaded Submissions</h2>
-                        <table>
+                    <section id="uploaded-submissions" style="font-family: 'Didact Gothic', sans-serif;">
+                        <h2 style="font-family: 'Didact Gothic', sans-serif;">Uploaded Submissions</h2>
+                        <table style="color: black; background: linear-gradient(135deg, #fffffe, #aef5d4);">
                             <thead>
                                 <tr>
                                     <th>SL.NO</th>

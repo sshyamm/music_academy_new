@@ -1195,46 +1195,32 @@
 		</div>
 		<div id="content" class="site-content">
 			<div class="site-content-inner edublink-container">
-				<div class="edublink-main-content-inner">
-
-					<section id="class-details">
-						<h2>Class Details</h2>
-						<table>
-							<tr>
-								<td>Course:</td>
-								<td><span id="course">Web Development</span></td>
-							</tr>
-							<tr>
-								<td>Course Description:</td>
-								<td><span id="course-description">Learn frontend and backend development</span></td>
-							</tr>
-							<tr>
-								<td>Teacher:</td>
-								<td><span id="teacher">John Doe</span></td>
-							</tr>
-							<tr>
-								<td>Start Time:</td>
-								<td><span id="start-time">9:00 AM</span></td>
-							</tr>
-							<tr>
-								<td>End Time:</td>
-								<td><span id="end-time">11:00 AM</span></td>
-							</tr>
-							<tr>
-								<td>Date:</td>
-								<td><span id="date">April 6, 2024</span></td>
-							</tr>
-							<tr>
-								<td>Class Status:</td>
-								<td><span id="class-status">Active</span></td>
-							</tr>
-						</table>
+				<style>
+					@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+				</style>
+				<div class="edublink-main-content-inner" style="font-family: 'Didact Gothic', sans-serif;">
+					<section id="class-details" style="background: linear-gradient(135deg, #d8f7d4, #26cf05); padding: 30px; border-radius: 25px; box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4); color: #fff; text-align: center;">
+						<h2 style="font-family: 'Roboto', Arial, sans-serif; font-size: 32px; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 20px;">Class Details</h2>
+						<div class="card-body" style="display: flex;">
+							<div class="column" style="flex: 1; text-align: left;">
+								<p style="color: #000;"><strong style="font-weight: bold;">Course:</strong> Web Development</p>
+								<p style="color: #000;"><strong style="font-weight: bold;">Teacher:</strong> John Doe</p>
+								<p style="color: #000;"><strong style="font-weight: bold;">Start Time:</strong> 9:00 AM</p>
+								<p style="color: #000;"><strong style="font-weight: bold;">End Time:</strong> 11:00 AM</p>
+								<p style="color: #000;"><strong style="font-weight: bold;">Date:</strong> April 6, 2024</p>
+								<p style="color: #000;"><strong style="font-weight: bold;">Class Status:</strong> <span style="font-weight: bold; color: #155724; background-color: #d4edda; padding: 5px; border-radius: 0.25rem;">Active</span></p>
+							</div>
+							<div class="column" style="flex: 1; text-align: left;">
+								<p style="color: #000;"><strong style="font-weight: bold;">Description:</strong> Learn frontend and backend development</p>
+							</div>
+						</div>
 					</section>
+					
 					<div style="height: 50px;"></div>
-					<section id="student-list">
-						<h2>Student List</h2>
-						<table>
-							<thead>
+					<section id="student-list" style="font-family: 'Didact Gothic', sans-serif;">
+						<h2 style="font-family: 'Didact Gothic', sans-serif;">Student List</h2>
+						<table style="background: linear-gradient(135deg, #fffffe, #aef5d4);">
+							<thead style="color: black;">
 								<tr>
 									<th>SL.NO</th>
 									<th>Student Name</th>
@@ -1243,7 +1229,7 @@
 									<th>Action</th>
 								</tr>
 							</thead>
-							<tbody>
+							<tbody style="color: black;">
 								<tr>
 									<td>1</td>
 									<td>Alice Smith</td>
@@ -1271,20 +1257,23 @@
 							</tbody>
 						</table>
 					</section>
+				
 					<div style="text-align: center;">
-						<button id="start-class">Start Class</button>
+						<button id="start-class" style="font-family: 'Didact Gothic', sans-serif;">Start Class</button>
 						<a href="upload_task.html">
-							<button id="upload-task">Upload Task</button>
+							<button id="upload-task" style="font-family: 'Didact Gothic', sans-serif;">Upload Task</button>
 						</a>
 						<a href="add_students.html">
-							<button id="add-students">Add Students</button>
+							<button id="add-students" style="font-family: 'Didact Gothic', sans-serif;">Add Students</button>
 						</a>
 					</div>
+				
 					<div style="height: 50px;"></div>
-					<section id="uploaded-tasks">
-						<h2>Uploaded Tasks</h2>
-						<table>
-							<thead>
+				
+					<section id="uploaded-tasks" style="font-family: 'Didact Gothic', sans-serif;">
+						<h2 style="font-family: 'Didact Gothic', sans-serif;">Uploaded Tasks</h2>
+						<table style="background: linear-gradient(135deg, #fffffe, #aef5d4);">
+							<thead style="color: black;">
 								<tr>
 									<th>SL.NO</th>
 									<th>Task Desc</th>
@@ -1293,34 +1282,74 @@
 									<th>Action</th>
 								</tr>
 							</thead>
-							<tbody>
+							<tbody style="color: black;">
 								<tr>
 									<td>1</td>
 									<td>Create Homepage</td>
 									<td>homepage.html</td>
 									<td>April 10, 2024</td>
-									<td><button>Download</button><button>Edit Task</button><button>Delete Task</button><a href="view_tasks.html"><button id="view-tasks">View Task</button></a><a href="submit_task.html"><button id="submit-task">Submit Task</button></a></td>
+									<td>
+										<button>Download</button>
+										<button>Edit Task</button>
+										<button>Delete Task</button>
+										<a href="view_tasks.html"><button id="view-tasks">View Task</button></a>
+										<a href="submit_task.html"><button id="submit-task">Submit Task</button></a>
+									</td>
 								</tr>
 								<tr>
 									<td>2</td>
 									<td>Database Design</td>
 									<td>database_design.pdf</td>
 									<td>April 15, 2024</td>
-									<td><button>Download</button><button>Edit Task</button><button>Delete
-											Task</button><button>View Tasks</button><button>Submit Task</button></td>
+									<td>
+										<button>Download</button>
+										<button>Edit Task</button>
+										<button>Delete Task</button>
+										<button>View Tasks</button>
+										<button>Submit Task</button>
+									</td>
 								</tr>
 							</tbody>
 						</table>
 					</section>
+				
 					<div style="height: 50px;"></div>
-					<section id="comments">
-						<h2>Comments</h2>
-						<textarea id="comment-textarea" rows="4" cols="50"
-							placeholder="Enter your comment here"></textarea><br>
-						<button id="submit-comment">Submit</button>
-						<div id="comments-view">
-							<p><strong>John Doe:</strong> Great job on the tasks!</p>
-							<p><strong>Alice Smith:</strong> Thank you!</p>
+				
+					<section id="comments" style="font-family: 'Didact Gothic', sans-serif;">
+						<div style="margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 0.5rem; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+							<div style="background-color: #aef5d4; color: #000; border-radius: 0.5rem 0.5rem 0 0; padding: 0.5rem 1rem;">
+								Leave a Comment
+							</div>
+							<div style="padding: 1rem;">
+								<form id="class-comment" method="post">
+									<div style="margin-bottom: 1rem;">
+										<label for="comment" style="margin-bottom: 0.5rem; display: block;">Comment</label>
+										<textarea style="width: 100%; padding: 0.5rem; border-radius: 0.5rem; border: 1px solid #ccc;" id="comment" name="comment" rows="3" placeholder="Enter your comment"></textarea>
+									</div>
+									<button type="submit" style="padding: 0.5rem 1rem; border-radius: 0.5rem; background-color: #aef5d4; color: #fff; border: none; cursor: pointer;" id="submit-comment">Submit</button>
+								</form>
+						
+								<div style="margin-top: 1rem;">
+									<h3 style="font-family: 'Didact Gothic', sans-serif;">Comments</h3>
+									<div style="margin-top: 1rem;">
+										<!-- Placeholder for comments -->
+										<div style="margin-bottom: 1rem;">
+											<p><strong>User Name Placeholder</strong> - Date Placeholder</p>
+											<p>Comment Placeholder</p>
+											<hr style="margin-top: 0.5rem; margin-bottom: 0.5rem;">
+										</div>
+										<!-- End of placeholder -->
+										
+										<!-- Placeholder for no comments -->
+										<div style="text-align: center;">
+											<div style="padding: 0.5rem 1rem; border-radius: 0.5rem; background-color: rgb(177, 238, 238); color: black;">
+												No comments yet.
+											</div>
+										</div>
+										<!-- End of placeholder -->
+									</div>
+								</div>
+							</div>
 						</div>
 					</section>
 				</div>

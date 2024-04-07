@@ -1195,32 +1195,44 @@
         </div>
         <div id="content" class="site-content">
             <div class="site-content-inner edublink-container">
-                <div class="edublink-main-content-inner">
-                    <h2>Add Students</h2>
-
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Select</th>
-                                <th>Student Name</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><input type="checkbox" name="student" value="1"></td>
-                                <td>Alice Smith</td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox" name="student" value="2"></td>
-                                <td>Bob Johnson</td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <div style="text-align: center; margin-top: 20px;">
-                        <button id="return">Return</button>
-                        <button id="add-students">Add Students</button>
+                <style>
+					@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+				</style>
+                <div class="edublink-main-content-inner" style="font-family: 'Didact Gothic', sans-serif;">
+                    <div style="margin-top: 5rem; color: black;">
+                        <h2 style="text-align: center; margin-bottom: 2rem; font-family: 'Didact Gothic', sans-serif;">Add Students to Class</h2>
+                                    
+                        <form id="addStudentsForm" method="POST">
+                            <input type="hidden" name="class_id" value="class_id_placeholder">
+                            
+                            <div style="overflow-x: auto;">
+                                <table style="width: 100%; border-collapse: collapse; border: 1px solid #dee2e6;">
+                                    <thead>
+                                        <tr>
+                                            <th style="padding: 0.75rem; border: 1px solid #dee2e6;">Select</th>
+                                            <th style="padding: 0.75rem; border: 1px solid #dee2e6;">User Name</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td style="padding: 0.75rem; border: 1px solid #dee2e6;">
+                                                <input type="checkbox" name="selected_students[]" value="user_id_placeholder" disabled>
+                                            </td>
+                                            <td style="padding: 0.75rem; border: 1px solid #dee2e6;">
+                                                User Name Placeholder
+                                                <span style="color: red;">(Already added to the class)</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div style="text-align: center; margin-top: 2rem;">
+                                <button type="submit" id="addStudentsBtn" style="padding: 0.5rem 1rem; border-radius: 0.5rem; background-color: #007bff; color: #fff; border: none; cursor: pointer;">Add</button>
+                                <a href="class_details.php?class_id=class_id_placeholder" style="margin-left: 1rem; padding: 0.5rem 1rem; border-radius: 0.5rem; background-color: #6c757d; color: #fff; border: none; cursor: pointer; text-decoration: none;">Return</a>
+                            </div>
+                        </form>
                     </div>
+                    
                 </div>
             </div>
         </div>
